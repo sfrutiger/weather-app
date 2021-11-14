@@ -22,7 +22,7 @@ const clearSearch = function () {
 
 const getWeather = function () {
   let searchText = document.querySelector('#search-text').value;
-  let url = 'http://api.openweathermap.org/data/2.5/weather?q=' + searchText + '&appid=8459b9cbf6abdcf305c2c6843de2c817';
+  let url = 'https://api.openweathermap.org/data/2.5/weather?q=' + searchText + '&appid=8459b9cbf6abdcf305c2c6843de2c817';
   fetch(url, {mode: 'cors'})
     .then(response => response.json())
     .then(data => {
